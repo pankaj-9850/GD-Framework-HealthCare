@@ -15,15 +15,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Base {
+public class Baseclass {
 
 	public static WebDriver driver;
 	public static Properties property;
 	public static ChromeOptions option;
 	
-	public Base() {
+	public Baseclass() {
 		
-		String path = System.getProperty("user.dir"+ "\\src\\main\\java\\properties"+"config.properties");
+		String path = System.getProperty("user.dir")+ "\\properties"+"\\config.properties";
+		
 		try {
 			FileInputStream file = new FileInputStream(path);
 			property=new Properties();
